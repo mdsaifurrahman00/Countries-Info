@@ -4,11 +4,12 @@
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- Bootstrap & CSS -->
+     <!-- Bootstrap, CSS, Favicon & Fontawesome -->
      <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css"/>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css" />
      <link rel="stylesheet" href="style.css">
+
      <title>Country Info</title>
 </head>
 <body class="bg-dark text-white">
@@ -42,22 +43,30 @@
                <div class="title text-center p-5">
                     <h1>All Countries</h1>
                </div>
+                    <div class="modal fade" id="centeredModal" tabindex="-1" aria-labelledby="centeredModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-body" id="country-details"></div>
+                        </div>
+                      </div>
+                    </div>  
           </div>
      </section>
 
      <main>
-          <div class="container">
+          <div class="container-fluid">
                <div class="country-wrapper" id="country-wrapper"></div>
           </div>
      </main>
 
-     <footer>
+     <!-- <footer>
           <p>&copy; All Copyright Reserved by MD Saifur Rahman</p>
-     </footer>
+     </footer> -->
 
 
-     <!-- Script -->
+     <!-- Bootstrap & Main Script -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.min.js"></script>
      <script src="main.js"></script>
+
 </body>
 </html>
